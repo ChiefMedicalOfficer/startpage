@@ -1,0 +1,148 @@
+ <!DOCTYPE html>
+<html>
+
+<head>
+
+<title>MediaPortal™</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<style>
+
+</style>
+</head>
+
+<body>
+<h1>MediaPortal</h1>
+<link href="dropdown.css" rel="stylesheet"/>
+ <div class="dropdown">
+ <img src="/images/analyse.svg" alt="analyse" width="100" height="50">
+  <!-- <button class="dropbtn">entertainment</button> -->
+  <div class="dropdown-content">
+	<a target="_blank" href="https://plexxy.duckdns.org/tautulli">tautulli</a>
+	<a target="_blank" href="https://netdata.plexxy.duckdns.org">netdata</a>
+    <a target="_blank" href="https://sonarr.plexxy.duckdns.org">sonarr</a>
+    <a target="_blank" href="https://radarr.plexxy.duckdns.org">radarr</a>
+	<a target="_blank" href="https://spotify.com">spotify</a>
+
+
+  </div>
+</div> 
+
+<div class="dropdown">
+ <img src="/images/reddit.svg" alt="reddit" width="100" height="50">
+
+<div class="dropdown-content">
+    <a target="_blank" href="https://reddit.com/r/tipofmytongue">r/tipofmytongue</a>
+    <a target="_blank" href="https://reddit.com/r/startpages">r/startpages</a>
+    <a target="_blank" href="https://reddit.com/r/askreddit">r/askreddit</a>
+	<a target="_blank" href="https://reddit.com/r/techsupport">r/techsupport</a>
+
+  </div>
+</div> 
+
+<div class="dropdown">
+ <img src="/images/github.svg" alt="github" width="100" height="50">
+
+  <div class="dropdown-content">
+    <a target="_blank" href="https://github.com">project0</a>
+    <a target="_blank" href="https://github.com">project1</a>
+    <a target="_blank" href="https://github.com">project2</a>
+  </div>
+</div> 
+
+<div class="dropdown">
+ <img src="/images/torrent.svg" alt="torrent" width="100" height="50">
+
+ <div class="dropdown-content">
+    <a target="_blank" href="#">tracker1</a>
+    <a target="_blank" href="#">tracker2</a>
+	<a target="_blank" href="#">qbittorrent</a>
+	<a target="_blank" href="#">deluge</a>
+	<a target="_blank" href="#">rtorrent</a>
+    <!-- <a target="_blank" href="#">baconbits</a>
+	<a target="_blank" href="#">cinemageddon</a>
+	<a target="_blank" href="#">32pages</a>
+	<a target="_blank" href="#">hd torrents</a>
+	<a target="_blank" href="#">broadcasthe.net</a>
+	<a target="_blank" href="#">myanonamouse</a>
+	<a target="_blank" href="#">bibliotik</a> -->
+  </div>
+</div> 
+
+<div class="dropdown">
+ <img src="/images/television.svg" alt="movies/tv" width="100" height="50">
+
+  <div class="dropdown-content">
+    <a target="_blank" href="https://plex.tv">plex</a>
+
+	<a target="_blank" href="https://netflix.com">netflix</a>
+    <a target="_blank" href="https://amazon.co.uk">prime</a>
+    <a target="_blank" href="https://youtube.com">youtube</a>
+    
+  </div>
+</div> 
+
+<div class="dropdown">
+ <img src="/images/docker.svg" alt="docker" width="100" height="50">
+
+  <div class="dropdown-content">
+    <a target="_blank" href="#">portainer</a>
+    <a target="_blank" href="#">bookstack</a>
+	<a target="_blank" href="#">linux server</a>
+	<a target="_blank" href="#">dockerhub</a>
+    
+  </div>
+</div> 
+
+<div class="dropdown">
+ <img src="/images/cloud.svg" alt="cloud" width="100" height="50">
+
+  <div class="dropdown-content">
+    <a target="_blank" href="#">syncthing</a>
+    <a target="_blank" href="#">drive</a>
+    <a target="_blank" href="#">btcloud</a>
+    <a target="_blank" href="#">onedrive</a>
+   
+  </div>
+</div> 
+
+<div class="dropdown">
+ <img src="/images/camera.svg" alt="Cinque Terre" width="100" height="50">
+
+  <div class="dropdown-content">
+    <a target="_blank" href="#">piwigo</a>
+  </div>
+</div> 
+<div id="MyClockDisplay" class="clock"></div>
+<script>function showTime(){
+    var date = new Date();
+    var h = date.getHours(); // 0 - 23
+    var m = date.getMinutes(); // 0 - 59
+    var s = date.getSeconds(); // 0 - 59
+    var session = "AM";
+    
+    if(h == 0){
+        h = 12;
+    }
+    
+    if(h > 12){
+        h = h - 12;
+        session = "PM";
+    }
+    
+    h = (h < 10) ? "0" + h : h;
+    m = (m < 10) ? "0" + m : m;
+    s = (s < 10) ? "0" + s : s;
+    
+    var time = h + ":" + m + ":" + s + " " + session;
+    document.getElementById("MyClockDisplay").innerText = time;
+    document.getElementById("MyClockDisplay").textContent = time;
+    
+    setTimeout(showTime, 1000);
+    
+}
+
+showTime();</script>
+
+
+
+</body>

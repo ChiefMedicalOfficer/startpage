@@ -1,0 +1,83 @@
+.clock {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #000000;
+    font-size: 40px;
+    font-family: 'taureg';
+    letter-spacing: 2px;
+}
+
+@font-face {
+font-family: "taureg";
+src: url("/fonts/taureg.otf");
+}
+
+@font-face {
+font-family: "computerfont";
+src: url("/fonts/Computerfont.ttf");
+}
+body {
+  text-align: center;
+}
+
+h1 {
+  font-family: computerfont;
+  text-align: center;
+  font-size: 90px;
+  padding: 0px 0px 20px 0px;
+  
+  
+  
+  
+}
+
+ /* Dropdown Button */
+.dropbtn {
+  
+  background-color: DarkSlateGray;
+  color: white;
+  padding: 16px;
+  font-size: 22px;
+  border: none;
+  
+  
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  font-family: verdana;
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  font-family: verdana;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;} 
+
